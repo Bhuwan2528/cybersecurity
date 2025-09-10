@@ -7,14 +7,18 @@
   height: 80vh;
   margin: 30px auto;
   border-radius: 12px;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.685)),url(../../assets/about-bg.png);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.685)), url(../../assets/about-bg.png);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  flex-wrap: wrap; /* Mobile ke liye stack ho */
 }
 
-.president-image{
-    flex-basis: 20%;
+.president-image {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center; /* center image horizontally */
+  margin-bottom: 20px; /* Mobile spacing */
 }
 
 .president-image img {
@@ -22,14 +26,11 @@
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 50px;
-  margin-top: 50%;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .president-content {
   flex-basis: 70%;
+  min-width: 250px; /* mobile ke liye minimum width */
 }
 
 .president-content h2 {
@@ -71,4 +72,63 @@
 
 .president-btn:hover {
   background-color: #001a5c;
+}
+
+/* ---------------- Responsive ---------------- */
+@media(max-width: 992px) {
+  .president-container {
+    height: auto; /* content ke hisaab se */
+    padding: 30px 30px;
+  }
+
+  .president-image {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .president-content {
+    flex-basis: 100%;
+  }
+
+  .president-content h2 {
+    font-size: 22px;
+  }
+
+  .president-content h4 {
+    font-size: 15px;
+  }
+
+  .president-content p {
+    font-size: 14px;
+  }
+
+  .president-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+@media(max-width: 600px) {
+  .president-container {
+    padding: 20px 20px;
+  }
+
+  .president-content h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .president-content h4 {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+
+  .president-content p {
+    font-size: 13px;
+  }
+
+  .president-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }

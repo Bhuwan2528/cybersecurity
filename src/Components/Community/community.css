@@ -9,11 +9,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.5)), url("../../assets/community-bg2.jpg"); /* 👈 yaha apni bg image ka path daalna */
+  background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.5)), url("../../assets/community-bg2.jpg");
+  flex-wrap: wrap; /* Allow stacking on mobile */
 }
 
 .community-content {
   max-width: 600px;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .community-tagline {
@@ -59,8 +62,9 @@
   background: rgb(8, 62, 95);
   padding: 25px 30px;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 500px;
   color: #fff;
+  flex: 1;
 }
 
 .events-box h3 {
@@ -106,12 +110,73 @@
   color: #fff;
 }
 
-/* 📱 Responsive */
+/* ---------------- Mobile Responsive ---------------- */
+@media (max-width: 1024px) {
+  .community-content h1 {
+    font-size: 42px;
+  }
+
+  .community-tagline {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 768px) {
+  .community-container {
+    flex-direction: column;
+    padding: 40px 40px;
+  }
+
+  .community-content,
   .events-box {
     max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .community-content h1 {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .join-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .community-content h1 {
+    font-size: 28px;
+  }
+
+  .community-tagline {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .join-btn {
     width: 100%;
-    margin: 20px auto;
-    text-align: left;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .events-box {
+    padding: 20px 15px;
+  }
+
+  .event-date,
+  .event-university {
+    font-size: 13px;
   }
 }

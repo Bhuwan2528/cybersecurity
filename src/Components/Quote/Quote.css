@@ -2,14 +2,19 @@
   width: 100%;
   background: rgb(29, 16, 13);
   backdrop-filter: blur(10px);
+  overflow-x: hidden;
 }
+
+/* -----------------QUOTE 1----------------- */
 .quote1{
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 50vh;
   overflow: hidden;
+  flex-wrap: wrap; /* Mobile ke liye wrap */
 }
+
 .quote1-left{
   flex-basis: 60%;
   padding: 15px 25px;
@@ -17,23 +22,25 @@
   backdrop-filter: blur(80px);
   text-align: center;
 } 
+
 .quote-en{
   width: 70%;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 1rem auto;
   font-weight: 500;
   font-size: 20px;
   color: white;
 }
+
 .quote-hi{
   width: 80%;
   line-height: 1.4;
   font-weight: 500;
-  font-weight: 20px;
   color: #fa7e02;
   font-size: 20px;
   margin: 0 auto;
 }
+
 .quote1-right{
   flex-basis: 40%;
   background: url(../../assets/modi1.jpg);
@@ -42,6 +49,7 @@
   background-repeat: no-repeat;
   position: relative;
 }
+
 .quote1-right::before{
   content: '';
   position: absolute;
@@ -54,37 +62,114 @@
   width: 100%;
 }
 
-
 /* -----------------QUOTE 2----------------- */
-/* -----------------QUOTE 2----------------- */
-/* -----------------QUOTE 2----------------- */
-
-
 .quote2{
   padding: 40px 15%;
   background: rgb(2, 26, 44);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   position: relative;
   color: whitesmoke;
 }
+
 .quote2 img{
   width: 300px;
   position: absolute;
   top: -50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
 }
+
 .position-manager{
   width: 300px;
   height: 100px;
 }
+
 .quote2-content{
   text-align: left;
+  max-width: 100%;
 }
-.quote2-content h3{
-  margin-bottom: 1rem;
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: underline;
+
+/* ----------------- Responsive ----------------- */
+@media(max-width: 992px){
+  .quote1-left,
+  .quote1-right{
+    flex-basis: 100%;
+  }
+
+  .quote1-left{
+    text-align: center;
+  }
+
+  .quote1-right{
+    height: 250px;
+    background-position: center top;
+  }
+
+  .quote-en, .quote-hi{
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
+@media(max-width: 600px){
+  .quote1{
+    height: auto;
+  }
+
+  .quote-en, .quote-hi{
+    font-size: 16px;
+  }
+
+  .quote1-left{
+    padding: 10px 15px;
+    background: rgb(2, 26, 44);
+  }
+
+  .quote1-right{
+    height: 200px;
+  }
+
+  .quote2{
+    padding: 20px;
+    align-items: flex-start;
+
+  }
+
+  .quote2 img{
+    position: relative;
+    width: 200px;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .quote2-content h3{
+    font-size: 18px;
+  }
+
+  .quote2-content p{
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 480px){
+  .quote-en, .quote-hi{
+    font-size: 14px;
+  }
+
+  .quote2 img{
+    width: 100px;
+    margin-top: 20px;
+  }
+  .position-manager{
+    display: none;
+  }
+  .quote2-content h3{
+    font-size: 16px;
+  }
+
+  .quote2-content p{
+    font-size: 14px;
+  }
 }

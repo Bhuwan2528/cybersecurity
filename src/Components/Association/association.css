@@ -21,6 +21,9 @@
 
 .logo-card {
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-card img {
@@ -34,23 +37,40 @@
   transform: scale(1.1);
 }
 
-/* 📱 Responsive */
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 1024px) {
   .association-container h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .logo-card img {
-    max-width: 90px;
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .association-container h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .logo-card img {
+    max-width: 80px;
   }
 }
 
 @media (max-width: 480px) {
   .association-container h2 {
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .logo-card img {
     max-width: 70px;
   }
+}
+
+/* Slick arrows z-index */
+.slick-prev, .slick-next {
+  z-index: 10;
 }

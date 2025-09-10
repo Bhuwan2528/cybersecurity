@@ -1,5 +1,4 @@
 .collab-container {
-  position: relative;
   background: #fff;
   padding: 80px 20px;
   text-align: center;
@@ -11,27 +10,30 @@
   position: relative;
 }
 
+/* Images */
 .collab-img {
   width: 220px;
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   position: absolute;
+  transition: all 0.3s ease;
 }
 
 /* Top image */
 .top-img {
-    top: 10%;
-    right: 8%;
+  top: 10%;
+  right: 8%;
   transform: rotate(6deg);
 }
 
 /* Bottom image */
 .bottom-img {
-    bottom: 10%;
-    left: 8%;
+  bottom: 10%;
+  left: 8%;
   transform: rotate(-6deg);
 }
 
+/* Text */
 .collab-text {
   max-width: 50%;
   font-size: 30px;
@@ -49,16 +51,54 @@
   font-weight: 600;
 }
 
-/* 📱 Responsive */
-@media (max-width: 768px) {
+/* ----------------- Responsive ----------------- */
+@media (max-width: 992px) {
   .collab-img {
-    width: 90%;
-    transform: none;
-    margin: 15px auto;
+    width: 180px;
   }
 
   .collab-text {
-    margin: 20px auto;
-    padding: 0 10px;
+    max-width: 70%;
+    font-size: 24px;
   }
+}
+
+@media (max-width: 768px) {
+  .collab-container {
+    padding: 60px 10px;
+  }
+
+  .collab-img {
+    position: relative; /* Absolute ko hata diya */
+    width: 100%;        /* Full container width ke hisaab se */
+    max-width: 250px;   /* Mobile me max size */
+    margin: 15px auto;  /* Center align */
+    transform: none;    /* Rotation remove kiya */
+  }
+
+  .collab-text {
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+    .collab-img {
+    max-width: 180px;   /* Chhoti screen pe aur chhoti */
+  }
+
+  .collab-text {
+    font-size: 16px;
+  }
+  .top-img {
+  margin-left: 0;    /* ya auto for center */
+  transform: translateX(-40px);
+}
+
+.bottom-img {
+  margin-right: 0;   /* ya auto for center */
+  transform: translateX(40px);
+}
 }

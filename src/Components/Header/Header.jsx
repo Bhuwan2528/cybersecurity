@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { RxCross2 } from "react-icons/rx"; // example for "X" (Twitter/X)
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaBars } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
-import logo from "../../assets/logo.png"; // replace with your logo path
+import logo from "../../assets/logo.png"; // apna logo path
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       {/* Top Bar */}
@@ -29,7 +31,15 @@ const Header = () => {
           <span>Cybersecurity Council</span>
         </div>
 
-        <ul className="nav-links">
+        {/* Hamburger Icon */}
+        <div
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <RxCross2 /> : <FaBars />}
+        </div>
+
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Committees</a></li>

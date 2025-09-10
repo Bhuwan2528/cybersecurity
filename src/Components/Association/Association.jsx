@@ -6,7 +6,7 @@ import "./association.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Example 10 logos
+// Logos
 import logo1 from "../../assets/logo1.jpg";
 import logo2 from "../../assets/logo2.jpg";
 import logo3 from "../../assets/logo3.png";
@@ -37,11 +37,11 @@ const Association = () => {
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 2 }
+        settings: { slidesToShow: 4 }
       },
       {
         breakpoint: 480,
-        settings: { slidesToShow: 1 }
+        settings: { slidesToShow: 3 }
       }
     ]
   };
