@@ -90,8 +90,10 @@
   list-style: none;
   display: flex;
   gap: 28px;
-  height: 90vh;
   z-index: 1000;
+}
+.nav-links li{
+  height: fit-content;
 }
 
 .nav-links a {
