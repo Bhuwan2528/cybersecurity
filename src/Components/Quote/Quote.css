@@ -1,0 +1,90 @@
+.quote-section{
+  width: 100%;
+  background: rgb(29, 16, 13);
+  backdrop-filter: blur(10px);
+}
+.quote1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.quote1-left{
+  flex-basis: 60%;
+  padding: 15px 25px;
+  background: linear-gradient(to right, rgb(12, 51, 78), rgba(255, 240, 193, 0.082));
+  backdrop-filter: blur(80px);
+  text-align: center;
+} 
+.quote-en{
+  width: 70%;
+  line-height: 1.8;
+  margin: 1rem auto;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+.quote-hi{
+  width: 80%;
+  line-height: 1.4;
+  font-weight: 500;
+  font-weight: 20px;
+  color: #fa7e02;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.quote1-right{
+  flex-basis: 40%;
+  background: url(../../assets/modi1.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.quote1-right::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(245, 245, 220, 0.164), rgba(255, 255, 255, 0.048));
+}
+
+.quote1-right img{
+  width: 100%;
+}
+
+
+/* -----------------QUOTE 2----------------- */
+/* -----------------QUOTE 2----------------- */
+/* -----------------QUOTE 2----------------- */
+
+
+.quote2{
+  padding: 40px 15%;
+  background: rgb(2, 26, 44);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: whitesmoke;
+}
+.quote2 img{
+  width: 300px;
+  position: absolute;
+  top: -50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
+}
+.position-manager{
+  width: 300px;
+  height: 100px;
+}
+.quote2-content{
+  text-align: left;
+}
+.quote2-content h3{
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}

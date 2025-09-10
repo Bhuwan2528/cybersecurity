@@ -1,0 +1,74 @@
+.president-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 40px;
+  max-width: 1100px;
+  height: 80vh;
+  margin: 30px auto;
+  border-radius: 12px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.685)),url(../../assets/about-bg.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.president-image{
+    flex-basis: 20%;
+}
+
+.president-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 50px;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.president-content {
+  flex-basis: 70%;
+}
+
+.president-content h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.president-content h4 {
+  margin: 8px 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+}
+
+.president-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: rgb(2, 26, 44);
+  font-weight: 600;
+}
+
+.president-btn {
+  background-color: rgb(11, 48, 77);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.president-btn:hover {
+  background-color: #001a5c;
+}

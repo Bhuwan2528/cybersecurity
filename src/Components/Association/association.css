@@ -1,0 +1,56 @@
+.association-container {
+  background: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.association-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.association-container h2 span {
+  color: #c00; /* red for "Association" */
+}
+
+.association-slider {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-card {
+  padding: 10px;
+}
+
+.logo-card img {
+  max-width: 120px;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-card img:hover {
+  transform: scale(1.1);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .association-container h2 {
+    font-size: 20px;
+  }
+
+  .logo-card img {
+    max-width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .association-container h2 {
+    font-size: 18px;
+  }
+
+  .logo-card img {
+    max-width: 70px;
+  }
+}

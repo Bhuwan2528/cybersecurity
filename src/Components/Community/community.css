@@ -1,0 +1,117 @@
+.community-container {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.5)), url("../../assets/community-bg2.jpg"); /* 👈 yaha apni bg image ka path daalna */
+}
+
+.community-content {
+  max-width: 600px;
+}
+
+.community-tagline {
+  color: #138808;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+
+.community-content h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #d9e0ec;
+}
+
+.join-btn {
+  background: linear-gradient(90deg, #0e9455, #138808);
+  color: #000;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 15px rgba(0, 255, 135, 0.5);
+}
+
+.events-box {
+  background: rgb(8, 62, 95);
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  color: #fff;
+}
+
+.events-box h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  background: #111a2b;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.event-item:hover {
+  background: #16263f;
+}
+
+.event-icon {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #47a80f;
+}
+
+.event-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #db1b45;
+  margin-bottom: 4px;
+}
+
+.event-university {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .events-box {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px auto;
+    text-align: left;
+  }
+}

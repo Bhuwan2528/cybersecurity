@@ -1,0 +1,99 @@
+.hero {
+  width: 100%;
+  height: 88vh;
+  background-image: url(../../assets/redfort.png);
+  background-size: cover;
+  background-position: 0 -80px;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.719); /* Dark overlay */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+/* Left Section */
+.hero-left {
+  max-width: 50%;
+  margin-top: 25%;
+}
+
+.hero-left h2 {
+  font-size: 28px;
+  font-weight: 700;
+  background-color: #ccd4df; /* Blue background */
+  padding: 6px 14px;
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #031f31;
+}
+
+.hero-left p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-left .highlight {
+  background-color: #ccd4df;
+  padding: 6px 14px;
+  display: inline-block;
+  color: #031f31;
+}
+.p{
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+}
+/* Right Section */
+.hero-right {
+  max-width: 55%;
+  margin-top: 10%;
+  text-align: left;
+}
+
+.tagline {
+  display: inline-block;
+  background: #ccd4df;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 10px;
+  margin-bottom: 15px;
+  color: #031f31;
+}
+
+.quote {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.quote-mark {
+  font-size: 32px;
+  color: orange;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.author {
+  font-size: 14px;
+  color: #ddd;
+  text-align: end;
+}
+
+.author-name {
+  color: #FF9933; /* Orange color for Modi's name */
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.author-post{
+    margin-top: 0;
+}
