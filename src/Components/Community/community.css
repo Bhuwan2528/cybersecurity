@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.5)), url("../../assets/community-bg2.jpg");
   flex-wrap: wrap; /* Allow stacking on mobile */
+  overflow-x: hidden !important;
 }
 
 .community-content {

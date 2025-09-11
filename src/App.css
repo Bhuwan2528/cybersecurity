@@ -14,8 +14,14 @@
   font-weight: 500;
   color: #181717;  
   /* ❌ mix-blend-mode hata diya */
+  overflow-x: hidden !important;
 }
 
 .cursor-text {
   pointer-events: none;
+}
+@media(max-width: 600px){
+    .custom-cursor{
+        display: none;
+    }
 }

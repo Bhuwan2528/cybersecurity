@@ -3,6 +3,7 @@
   color: white;
   padding: 60px 20px;
   text-align: center;
+  overflow-x: hidden !important;
 }
 
 .programs-title {

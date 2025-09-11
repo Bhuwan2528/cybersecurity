@@ -12,6 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   flex-wrap: wrap; /* Mobile ke liye stack ho */
+  overflow-x: hidden !important;
 }
 
 .president-image {

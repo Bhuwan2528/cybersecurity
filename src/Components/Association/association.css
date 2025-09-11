@@ -2,6 +2,7 @@
   background: #fff;
   text-align: center;
   padding: 60px 20px;
+  overflow-x: hidden !important;
 }
 
 .association-container h2 {

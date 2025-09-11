@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-x: hidden !important;
 }
 
 /* Images */
@@ -24,6 +25,7 @@
   top: 10%;
   right: 8%;
   transform: rotate(6deg);
+    animation: float 3s ease-in-out infinite;
 }
 
 /* Bottom image */
@@ -31,6 +33,8 @@
   bottom: 10%;
   left: 8%;
   transform: rotate(-6deg);
+    animation: float 3s ease-in-out infinite;
+      animation-delay: 1s;
 }
 
 /* Text */

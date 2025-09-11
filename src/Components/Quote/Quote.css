@@ -2,7 +2,7 @@
   width: 100%;
   background: rgb(29, 16, 13);
   backdrop-filter: blur(10px);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* -----------------QUOTE 1----------------- */

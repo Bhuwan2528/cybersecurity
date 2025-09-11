@@ -2,6 +2,7 @@
   padding: 60px 20px;
   text-align: center;
   background: #f9f9f9;
+  overflow-x: hidden !important;
 }
 
 .gallery-heading {
