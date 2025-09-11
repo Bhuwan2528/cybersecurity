@@ -1,0 +1,21 @@
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background: #7c32d1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #181717;  
+  /* ❌ mix-blend-mode hata diya */
+}
+
+.cursor-text {
+  pointer-events: none;
+}

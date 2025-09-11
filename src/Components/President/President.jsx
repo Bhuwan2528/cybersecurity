@@ -6,12 +6,12 @@ const President = () => {
   return (
     <div className="president-container">
       <div className="president-image">
-        <img src={presidentImg} alt="President" />
+        <img  data-aos="fade-down" data-aos-delay="100"  src={presidentImg} alt="President" />
       </div>
-      <div className="president-content">
+      <div data-aos="fade-right" data-aos-delay="200"  className="president-content">
         <h2>Dr. Lalit Gupta</h2>
         <h4>President, Cybersecurity Council for India</h4>
-        <p>
+        <p data-aos="fade-left" data-aos-delay="300" >
           Meet Dr. Lalit Gupta, widely known as{" "}
           <span className="highlight">"The Cyber Doctor"</span>, is a globally
           recognized cybersecurity visionary, AI strategist, and risk governance
@@ -22,7 +22,7 @@ const President = () => {
           to strengthening national cybersecurity frameworks, driving awareness,
           and fostering youth empowerment to build a digitally resilient India.
         </p>
-        <button className="president-btn">President Desk</button>
+        <button data-aos="fade-right" data-aos-delay="100"  className="president-btn">President Desk</button>
       </div>
     </div>
   );

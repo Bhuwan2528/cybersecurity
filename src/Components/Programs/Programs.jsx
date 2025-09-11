@@ -33,7 +33,7 @@ const Programs = () => {
 
       <div className="programs-grid">
         {data.map((item, index) => (
-          <div className="program-card" key={index}>
+          <div className="program-card" data-aos="fade-up" data-aos-delay="100" key={index}>
             <div className="program-icon">{item.icon}</div>
             <h3>{item.title}</h3>
             <p>{item.desc}</p>

@@ -36,14 +36,18 @@
 /* Text */
 .collab-text {
   max-width: 50%;
-  font-size: 30px;
   margin: 40px auto;
+  font-size: 30px;
+  line-height: 1.7;
+  color: #333;
+  overflow: hidden; /* animation ke time words cut na ho */
 }
 
 .collab-text p {
   font-size: 20px;
   line-height: 1.7;
   color: #333;
+  margin: 0;
 }
 
 .highlight {
@@ -70,10 +74,10 @@
 
   .collab-img {
     position: relative; /* Absolute ko hata diya */
-    width: 100%;        /* Full container width ke hisaab se */
-    max-width: 250px;   /* Mobile me max size */
-    margin: 15px auto;  /* Center align */
-    transform: none;    /* Rotation remove kiya */
+    width: 100%;
+    max-width: 250px;
+    margin: 15px auto;
+    transform: none;
   }
 
   .collab-text {
@@ -85,20 +89,21 @@
 }
 
 @media (max-width: 480px) {
-    .collab-img {
-    max-width: 180px;   /* Chhoti screen pe aur chhoti */
+  .collab-img {
+    max-width: 180px;
   }
 
   .collab-text {
     font-size: 16px;
   }
-  .top-img {
-  margin-left: 0;    /* ya auto for center */
-  transform: translateX(-40px);
-}
 
-.bottom-img {
-  margin-right: 0;   /* ya auto for center */
-  transform: translateX(40px);
-}
+  .top-img {
+    margin-left: 0;
+    transform: translateX(-40px);
+  }
+
+  .bottom-img {
+    margin-right: 0;
+    transform: translateX(40px);
+  }
 }

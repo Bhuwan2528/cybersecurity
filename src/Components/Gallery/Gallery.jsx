@@ -15,7 +15,7 @@ const Gallery = () => {
 
       <div className="gallery-grid">
         {images.map((src, index) => (
-          <div className="gallery-item" key={index}>
+          <div className="gallery-item" data-aos="fade-up" data-aos-delay="100" key={index}>
             <img src={src} alt={`gallery-${index}`} />
           </div>
         ))}

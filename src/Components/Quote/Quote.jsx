@@ -26,9 +26,9 @@ const Quote = () => {
         </div>
 
         <div className="quote2">
-            <img src={modiSmall} alt="" />
+            <img data-aos="fade-right" data-aos-delay="100" src={modiSmall} alt="" />
             <div className="position-manager"></div>
-            <div className="quote2-content">
+            <div className="quote2-content"  data-aos="fade-left" data-aos-delay="200">
                 <h3>Our Honerable Prime Ministaer Of India</h3>
                 <p>" To overcome Cybersecurity threats, we must unite and act together "</p>
             </div>

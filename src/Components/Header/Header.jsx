@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Header.css";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import logo from "../../assets/logo.png"; // apna logo path
 
@@ -26,7 +28,7 @@ const Header = () => {
 
       {/* Main Navbar */}
       <nav className="navbar">
-        <div className="logo">
+        <div className="logo" data-aos="fade-up"  >
           <img src={logo} alt="Cybersecurity Council Logo" />
           <span>Cybersecurity Council</span>
         </div>
@@ -40,11 +42,11 @@ const Header = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Committees</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">R&D</a></li>
+          <li data-aos="fade-up" data-aos-delay="100"><a href="#">Home</a></li>
+          <li data-aos="fade-up" data-aos-delay="200"><a href="#">About Us</a></li>
+          <li data-aos="fade-up" data-aos-delay="300"><a href="#">Committees</a></li>
+          <li data-aos="fade-up" data-aos-delay="400"><a href="#">Resources</a></li>
+          <li data-aos="fade-up" data-aos-delay="500"><a href="#">R&D</a></li>
         </ul>
       </nav>
     </header>
